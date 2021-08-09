@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta name="title" content="Orinoco Meubles">
+    <meta name="description" content="Orinoco Meubles est la référence des sites de vente de meubles en chêne. Vernis, nos produits sont également garantis!">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Panier</title>
+    <link rel="stylesheet" href="style.css">
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    <!--Flavicon-->
+
+</head>
+<body>
+    <!--Header-->
+    <header class="header">
+        <div class="header__infos header__bis">
+            <a href="index.html"><h1 class="header__logo">Orinoco Meubles</h1></a>
+        </div>
+    </header>
+    <main>
+        <div class="order__summary">
+            <h2>Récapitulatif de votre commande</h2>
+        </div>
+        <table class="table">
+            <thead class="table__thead">
+                <tr>
+                    <th>Photo</th>
+                    <th>Produit</th>
+                    <th>Prix</th>
+                    <th>Quantité</th>
+                    <th>Total</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody class="table__body">
+                <tr>
+                    <td><img class="table__img" src="images/oak_1.jpg"></td>
+                    <td><p class="table__name">Camera</p></td>
+                    <td><p class="table__price">55€</p></td>
+                    <td><input type="number" id="basket__product__quantity" class="basket__product__quanty" value="" min="1" max="99"></td> <!--fonction pour appeler +=1 à chaque clic "Ajouter au panier"-->
+                    <td><p class="table__total__ price">55€</p></td> <!--fonction pour appeler table__price * basket__product__quantity-->
+                    <td><input class="table__checkbox" type="checkbox"></td>
+                    <td><button type="button" class="table__button">Supprimer</button></td>
+                </tr>
+            </tbody>
+            <tfoot class="table__tfoot">
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th class="final__total">Total</th>
+                    <th class="final__price">0€</th>
+                </tr>
+            </tfoot>
+        </table>
+        <div class="manage__basket"> 
+            <button class="empty__basket" type="button">Vider le panier</button>
+            <a href="index.html"><button class="keep__shopping" type="button">Continuer les achats</button></a>
+        </div>
+        <!-- fonction si total vide : Votre panier ne comporte aucun article -->
+
+        <!--Formulaire-->
+        <form class="form">
+            <h2>Vos coordonnées</h2>
+            <div class="form__container">
+                <label for="name" class ="form__label">Nom :</label>
+                <input class="form__input" type="text" placeholder="Votre nom">
+            </div>
+            <div class="form__container">
+                <label for="name" class="form__label">Prénom :</label>
+                <input class="form__input" type="text" placeholder="Votre prénom">
+            </div>
+            <div class="form__container">
+                <label for="email" class="form__label">@Email :</label>
+                <input class="form__input" type="email" placeholder="Votre adresse mail">
+            </div>
+            <div class="form__container">
+                <label for="location" class="form__label">Adresse :</label>
+                <input class="form__input" type="text" placeholder="Votre adresse postale">
+            </div>
+            <div class="form__container">
+                <label for="city" class="form__label">Ville :</label>
+                <input class="form__input" type="text" placeholder="Votre ville">
+            </div>
+            <div class="form__container">
+                <label for="date" class="form__label">Date de livraison souhaitée:</label>
+                <input type="date" id="delivery__date" name="date" value="2021-09-01" min="2021-09-01" max="2022-03-31">
+            </div>
+        </form>
+        <a href="confirmation.html"><button class="order__button" type="button">Confirmer votre commande</button></a>
+    </main>
+        <!--Footer-->
+    <footer class="footer">
+        <div class="footer__socials">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+        <a href="mailto:orinocofurnitures@gmail.com" class="footer__contact">Contact</a>
+    </footer>
+
+    <!--Script JS/kit icone-->
+    <script src="https://kit.fontawesome.com/c787ac6dcf.js" crossorigin="anonymous"></script>
+    <script src="JS/basket.js"></script>
+</body>
+</html>

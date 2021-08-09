@@ -1,0 +1,370 @@
+body {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 16px;
+  text-align: center;
+  font-family: "Roboto Slab";
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+main {
+  background-color: #eeffef;
+}
+h2,
+h3,
+p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+/***HEADER***/
+header {
+  background-color: #fff;
+  border-bottom: 0.2rem solid #496b54;
+}
+.header__infos {
+  margin: 0 auto;
+  max-width: 1400px;
+  padding: 0 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-block-start: 0;
+}
+.header__infos a i {
+  color: #496b54;
+}
+.header__logo {
+  font-family: "Shrikhand";
+  color: #496b54;
+}
+.header__bis {
+  justify-content: center;
+}
+
+/***FOOTER***/
+footer {
+  background: #fff;
+  padding-bottom: 1rem;
+  text-align: center;
+  border-top: 0.2rem solid #496b54;
+}
+footer .footer__socials {
+  display: flex;
+  justify-content: center;
+}
+footer i {
+  font-size: 2rem;
+  padding: 1.5rem 0;
+  margin: 0 1.5rem;
+  color: #496b54;
+}
+footer i:hover,
+.header__infos i:hover {
+  transition: 500ms;
+  transform: scale(1.5);
+}
+footer .footer__contact {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #496b54;
+}
+
+/***INDEX.HTML***/
+
+.product__index__button {
+  border-radius: 15px;
+  background-color: #fff;
+  color: #496b54;
+  font-weight: bold;
+  cursor: pointer;
+  border: 2px solid black;
+  padding: 0 1rem;
+}
+
+.product__index__button:hover {
+  transition: 500ms;
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+
+.products__intro__title {
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+}
+
+#products {
+  margin: 0 auto;
+  padding-bottom: 5rem;
+  max-width: 1400px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-family: "Roboto Slab";
+  gap: 3rem;
+}
+#products .product__container {
+  background-color: rgb(255, 250, 250);
+  width: 13rem;
+  height: 20rem;
+  margin: 1rem;
+  padding: 1rem;
+  box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.3);
+  border-radius: 7px;
+}
+#products .product__image {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+}
+
+#products .product__title {
+  height: 8%;
+  margin-block-start: 0.2rem;
+  margin-block-end: 0.2rem;
+}
+#products .product__infos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 8%;
+  margin-top: 0.5rem;
+}
+
+/***PRODUCT.HTML***/
+
+.article__image {
+  margin-top: 4rem;
+  width: 60vw;
+  max-width: 1000px;
+  object-fit: contain;
+}
+
+.article__product {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.article__description {
+  margin: 0 1rem;
+}
+
+article .quantity__product {
+  width: 3rem;
+  text-align: center;
+  border-radius: 15px;
+  padding: 0.3rem;
+}
+
+.article__varnish {
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+}
+.article__varnish select {
+  border-radius: 15px;
+  padding: 0.2rem;
+  border: 2px solid black;
+  width: 8rem;
+}
+
+.article__product .article__price,
+.article__product .button__container {
+  padding-bottom: 2rem;
+}
+
+.article__product h2,
+.article__product .article__description {
+  padding-bottom: 1rem;
+}
+
+.button__container button,
+.manage__basket button,
+.table__body button,
+.order__button {
+  background-color: #fff;
+  cursor: pointer;
+  font-family: "Roboto Slab";
+  font-weight: 800;
+  border-radius: 15px;
+  border: 2px solid black;
+  padding: 0.4rem 2rem;
+  color: #496b54;
+  margin: 0 2rem;
+}
+
+.button__container button:hover,
+.manage__basket button:hover,
+.table__body button:hover,
+.order__button:hover {
+  transition: 500ms;
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+
+/***CONFIRMATION.HTML***/
+.confirmation {
+  padding: 5rem 0;
+}
+
+.confirmation h2,
+.confirmation__order h3 {
+  padding-bottom: 0.5rem;
+}
+
+.confirmation__description {
+  padding-bottom: 1.5rem;
+}
+
+.confirmation .order__number {
+  padding-bottom: 0.2rem;
+}
+
+/***BASKET.HTML***/
+
+.table {
+  text-align: center;
+  padding-bottom: 1rem;
+  width: 95%;
+  max-width: 1400px;
+}
+
+.table__body img {
+  width: 5rem;
+}
+
+.order__summary h2 {
+  padding: 3rem 0;
+}
+
+.manage__basket {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.form h2 {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.form__container {
+  padding-bottom: 0.2rem;
+}
+
+.order__button {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+thead th {
+  padding: 0 1rem;
+  padding-bottom: 1rem;
+}
+
+.table__body {
+  padding-bottom: 0.2rem;
+}
+
+.table__tfoot th {
+  padding-top: 1rem;
+}
+
+.table__checkbox {
+  margin-left: 3rem;
+  margin-right: 1rem;
+}
+
+.basket__product__quanty {
+  width: 2.5rem;
+  text-align: center;
+  border-radius: 15px;
+  padding: 0.2rem;
+}
+
+.form__container input {
+  border-radius: 15px;
+  padding: 0.2rem 1rem;
+  margin-left: 2rem;
+  font-family: "Roboto Slab";
+}
+
+.form__container {
+  padding-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 800px) {
+  main {
+    padding: 0 1rem;
+  }
+
+  .header__infos {
+    padding: 0 2rem;
+  }
+
+  .table__checkbox {
+    margin: 0 0.5rem;
+  }
+  .table__body button {
+    margin: 0;
+    padding: 0.4rem 1rem;
+  }
+  thead th {
+    padding: 0 0.2rem;
+    padding-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header__logo {
+    font-size: 1.2rem;
+  }
+
+  footer i {
+    font-size: 1.5rem;
+  }
+
+  .button__container button {
+    padding: 0.4rem 1rem;
+  }
+  .table,
+  .basket__product__quanty,
+  .table__button {
+    font-size: 0.6rem;
+  }
+  .basket__product__quanty {
+    width: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .manage__basket button {
+    padding: 0.4rem 0.5rem;
+    margin: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .table__body button {
+    padding: 0.2rem 0.3rem;
+  }
+  .table__body img {
+    width: 2rem;
+  }
+  .form{
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  .form__container input{
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .table {
+    margin: 0 auto;
+  }
+}
