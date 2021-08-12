@@ -1,9 +1,10 @@
+import { object } from "./models/object.js";
+
 import {ObjectService} from "./services/objectService.js";
 
 (async function() {
     const objectService = new ObjectService();
     const objects = await objectService.getObjects();
-
     displayObjects(objects);
 })();
 

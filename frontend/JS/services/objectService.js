@@ -1,6 +1,3 @@
-import { object } from "../models/object.js";
-
-
 export class ObjectService {
     constructor(){}
     async getObject(objectId){
@@ -15,6 +12,7 @@ export class ObjectService {
         .catch(function(error) {
             alert(error);
         }));
+        
     } 
     
     async getObjects() {
