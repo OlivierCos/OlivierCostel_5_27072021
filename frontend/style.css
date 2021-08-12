@@ -154,13 +154,6 @@ footer .footer__contact {
   margin: 0 1rem;
 }
 
-article .quantity__product {
-  width: 3rem;
-  text-align: center;
-  border-radius: 15px;
-  padding: 0.3rem;
-}
-
 .article__varnish {
   padding-top: 0.5rem;
   padding-bottom: 1rem;
@@ -254,6 +247,9 @@ article .quantity__product {
 .form__container {
   padding-bottom: 0.2rem;
 }
+.form__container input{
+  outline: none;
+}
 
 .order__button {
   margin-top: 2rem;
@@ -276,13 +272,6 @@ thead th {
 .table__checkbox {
   margin-left: 3rem;
   margin-right: 1rem;
-}
-
-.basket__product__quanty {
-  width: 2.5rem;
-  text-align: center;
-  border-radius: 15px;
-  padding: 0.2rem;
 }
 
 .form__container input {
@@ -331,12 +320,8 @@ thead th {
     padding: 0.4rem 1rem;
   }
   .table,
-  .basket__product__quanty,
   .table__button {
     font-size: 0.6rem;
-  }
-  .basket__product__quanty {
-    width: 1.5rem;
   }
 }
 
