@@ -269,11 +269,6 @@ thead th {
   padding-top: 1rem;
 }
 
-.table__checkbox {
-  margin-left: 3rem;
-  margin-right: 1rem;
-}
-
 .form__container input {
   border-radius: 15px;
   padding: 0.2rem 1rem;
@@ -293,10 +288,7 @@ thead th {
   .header__infos {
     padding: 0 2rem;
   }
-
-  .table__checkbox {
-    margin: 0 0.5rem;
-  }
+  
   .table__body button {
     margin: 0;
     padding: 0.4rem 1rem;

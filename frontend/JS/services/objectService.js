@@ -1,33 +1,20 @@
+///Création d'une classe pour appeler l'API avec deux fonctions getObject(s) pour récupérer les objects json avec un fetch///
 export class ObjectService {
     constructor(){}
-    async getObject(objectId){
+    async getObject(id){
         return (
-        fetch("http://localhost:3000/api/furniture/" + objectId) 
-        .then(function(data) {
-            return data.json();
-        })
-        .then(function(object) {
-            return object;   
-        })
-        .catch(function(error) {
-            alert(error);
-        }));
+        fetch("http://localhost:3000/api/furniture/" + id) 
+        .then( data => data.json())
+        .catch(error => alert(error))
+        );
         
     } 
     
     async getObjects() {
         return (
             fetch("http://localhost:3000/api/furniture/")
-            .then(function(data) {
-                return data.json();
-            })
-            .then(function(objects) {
-                return objects;
-    
-            })
-            .catch(function(error) {
-                alert(error);
-            })
+            .then(data => data.json())
+            .catch(error => alert(error))
         );
     }
 }
