@@ -7,23 +7,13 @@ export class CartService {
     constructor() {}
     getCart() {
         const objects = localStorageObject?localStorageObject: [];
-        return new cart(objects);
-    }
-
-    displayCart(cart) {
-        const tableContainer = document.getElementById('tableb');
-
-        for (const object of cart.objects) {
-            let objectsCartContainer = document.getElementById('tr__body');
-            objectsCartContainer.innerHTML += `
-                <tr><td><img class="table__img" src="${object.imageUrl}"></td>
-                    <td><p class="table__name">${object.name}</p></td>
-                    <td><p class="table__price" src>${object.price}</p></td>
-                    <td></td>
-                    <td><button type="button" class="table__button">Supprimer</button></td></tr>
-                `;
-
-            tableContainer.objectsCartContainer;
-        };
+        if(objects == 0){
+            const emptyBasket = `<span id="BasketIsEmpty"> Votre panier est vide</span>`
+            let emptyBasketLine = document.getElementById("table");
+            return emptyBasketLine.innerHTML = emptyBasket;
+            }
+        else{
+            return new cart(objects);
+        }
     }
 }

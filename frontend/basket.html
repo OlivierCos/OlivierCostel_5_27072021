@@ -24,36 +24,36 @@
         <div class="order__summary">
             <h2>Récapitulatif de votre commande</h2>
         </div>
-        <table class="table">
+        <table id="table" class="table">
             <thead class="table__thead">
                 <tr>
                     <th>Photo</th>
                     <th>Produit</th>
+                    <th></th>
                     <th>Prix</th>
-                    <th>Total</th>
                     <th></th>
                 </tr>
             </thead>
             <tbody id="tableb" class="table__body">
-                <tr id="tr__body">
-                    <!-- <td><img class="table__img" src="../backend/images/oak_1.jpg"></td>
+                <!--<tr id="tr__body">
+                     <td><img class="table__img" src="../backend/images/oak_1.jpg"></td>
                     <td><p class="table__name">Meuble</p></td>
                     <td><p class="table__price">55€</p></td>
                     <td></td>
-                    <td><button type="button" class="table__button">Supprimer</button></td> -->
-                </tr>
+                    <td><button type="button" class="table__button">Supprimer</button></td>
+                </tr> -->
             </tbody>
             <tfoot class="table__tfoot">
-                <tr>
-                    <th></th>
+                 <tr id="tfoot__tr">
+                 <!--   <th></th>
                     <th></th>
                     <th class="final__total">Total</th>
-                    <th class="final__price">0€</th>
+                    <th class="final__price">0€</th> -->
                 </tr>
             </tfoot>
         </table>
         <div class="manage__basket"> 
-            <button class="empty__basket" type="button">Vider le panier</button>
+            <button id="empty__basket" class="empty__basket" type="button">Vider le panier</button>
             <a href="index.html"><button class="keep__shopping" type="button">Continuer les achats</button></a>
         </div>
         <!-- fonction si total vide : Votre panier ne comporte aucun article -->
@@ -63,30 +63,30 @@
             <h2>Vos coordonnées</h2>
             <div class="form__container">
                 <label for="name" class ="form__label">Nom :</label>
-                <input class="form__input" type="text" placeholder="Votre nom">
+                <input id="lastName" class="form__input" type="text" placeholder="Votre nom">
             </div>
             <div class="form__container">
                 <label for="name" class="form__label">Prénom :</label>
-                <input class="form__input" type="text" placeholder="Votre prénom">
+                <input id="firstName" class="form__input" type="text" placeholder="Votre prénom">
             </div>
             <div class="form__container">
                 <label for="email" class="form__label">@Email :</label>
-                <input class="form__input" type="email" placeholder="Votre adresse mail">
+                <input id="email" class="form__input" type="email" placeholder="Votre adresse mail">
             </div>
             <div class="form__container">
                 <label for="location" class="form__label">Adresse :</label>
-                <input class="form__input" type="text" placeholder="Votre adresse postale">
+                <input id="address" class="form__input" type="text" placeholder="Votre adresse postale">
             </div>
             <div class="form__container">
                 <label for="city" class="form__label">Ville :</label>
-                <input class="form__input" type="text" placeholder="Votre ville">
+                <input id="city" class="form__input" type="text" placeholder="Votre ville">
             </div>
             <div class="form__container">
                 <label for="date" class="form__label">Date de livraison souhaitée:</label>
                 <input type="date" id="delivery__date" name="date" value="2021-09-01" min="2021-09-01" max="2022-03-31">
             </div>
         </form>
-        <a href="confirmation.html"><button class="order__button" type="button">Confirmer votre commande</button></a>
+        <button class="order__button" type="button">Confirmer votre commande</button>
     </main>
         <!--Footer-->
     <footer class="footer">
