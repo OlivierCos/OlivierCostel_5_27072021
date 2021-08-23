@@ -118,12 +118,12 @@ footer .footer__contact {
 }
 #products .product__image {
   width: 100%;
-  height: 80%;
+  height: 70%;
   object-fit: cover;
 }
 
 #products .product__title {
-  height: 8%;
+  height: 15%;
   margin-block-start: 0.2rem;
   margin-block-end: 0.2rem;
 }
@@ -269,11 +269,6 @@ thead th {
   padding-top: 1rem;
 }
 
-.table__checkbox {
-  margin-left: 3rem;
-  margin-right: 1rem;
-}
-
 .form__container input {
   border-radius: 15px;
   padding: 0.2rem 1rem;
@@ -293,10 +288,7 @@ thead th {
   .header__infos {
     padding: 0 2rem;
   }
-
-  .table__checkbox {
-    margin: 0 0.5rem;
-  }
+  
   .table__body button {
     margin: 0;
     padding: 0.4rem 1rem;

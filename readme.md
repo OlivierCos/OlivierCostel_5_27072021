@@ -1,5 +1,10 @@
 # Orinoco #
 
+Projet à réaliser dans le cadre de la formation Développeur Web d'Openclassrooms. L'objectif est de créer un site e-commerce avec une des trois catégories suivantes au choix : ours en peluche faits à la main, caméras vintage ou meubles en chêne.
+
+### Technologies utilisées : ###
+
+HTML, CSS(SASS) et Javascript.
 
 ### Prerequisites ###
 

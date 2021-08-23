@@ -11,8 +11,6 @@
     <!--Fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
-    <!--Flavicon-->
-
 </head>
 
 <body>
@@ -30,12 +28,7 @@
                 <p class="confirmation__description">Nous vous avons envoyer un email de confirmation de traitement de
                     votre commande.</p>
             </div>
-            <div class="confirmation__order">
-                <h3 class="order__title">Récapitulatif de votre commande :</h3>
-                <p class="order__number">Commande n°<strong>999999999</strong></p>
-                <!-- fonction pour appeler le numéro de commande grace à l'api-->
-                <p class="order__cost">Prix total : <strong>55€</strong></p>
-                <!--fonction pour appeler le prix final-->
+            <div id="confirmation__order" class="confirmation__order">
             </div>
         </section>
     </main>
@@ -52,7 +45,7 @@
 
     <!--Script JS/kit icone-->
     <script src="https://kit.fontawesome.com/c787ac6dcf.js" crossorigin="anonymous"></script>
-    <script src="JS/confirmation.js"></script>
+    <script type="module" src="JS/confirmation.js"></script>
 
 
 </body>
