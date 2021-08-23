@@ -20,16 +20,18 @@ displayForm() {
     };
 
     const regexNameAndCity = (value) => {
-        return /^[a-zA-Z\-]+$/.test(value);
+        return /^[a-zA-Z\u0080-\u024F\s\/\-\)\(\`\.\"\']+$/.test(value);
     };
 
     const regexAddress = (value) => {
-        return /^([0-9]*) ?([a-zA-Z,\. ]*)$/.test(value);
+        return /^[0-9]{1,3}(([,. ]?){1}[-a-zA-Zàâäéèêëïîôöùûüç']+)*$/.test(value);
     };
 
     const regexEmail = (value) => {
         return /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(value);
     };
+
+ //Validation des données du formulaire et ajout d'un message d'alerte pour montrer que le champ est valide ou non selon les RegEx
 
     function firstNameCheck(formData) {
         const firstNameValidation = formData.firstName;
@@ -40,7 +42,6 @@ displayForm() {
             return false;
         };
     }
-
 
     function lastNameCheck(formData) {
         const lastNameValidation = formData.lastName;
@@ -81,12 +82,14 @@ displayForm() {
             return false;
         };
     }
+//Contrôle de la validité de chaque input du form avant envoi dans le localStorage
     if (firstNameCheck(formData) && lastNameCheck(formData) && addressCheck(formData) && cityCheck(formData) && emailCheck(formData)) {
+ //Mettre l'objet formData dans le localStorage
         localStorage.setItem("formData", JSON.stringify(formData));
         } else {
         return false;
         }
-
+///Création de la fonction pour envoyer des données au service web via l'API
     function sendOrder() {
         const LOCAL_STORAGE_KEY = "object";
         let localStorageObject = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY));
@@ -94,7 +97,7 @@ displayForm() {
             products: localStorageObject.map((object) => object.id),
             contact: formData
         }
-
+ //Envoi des données DatatoSend au serveur grâce à la méthode POST
         const POST = fetch("http://localhost:3000/api/furniture/order", {
             method: "POST",
             body: JSON.stringify(DataToSend),
@@ -106,9 +109,7 @@ displayForm() {
         .then((data) => {
             const localStorageFinalPrice = JSON.parse(localStorage.getItem("finalPrice"));
             window.location.href = "confirmation.html?orderId=" + data.orderId;
-            if (localStorageObject == 0) {
-                window.location.href = "panier.html";
-            }
+
         })
         .catch(function(error) {
             alert(error);

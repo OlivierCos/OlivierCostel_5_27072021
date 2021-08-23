@@ -1,5 +1,5 @@
 import { CartService } from "./services/cartService.js";
-import { FormService } from "./models/form.js";
+import { FormService } from "./services/formService.js";
 
 init();
 
@@ -47,20 +47,23 @@ function calculateTotal(){
     }
 //Création de la fonction pour afficher dynamiquement le prix total en HTML
     function displayTotal(){
-        let displayTotalLine = document.getElementById('tfoot__tr');
+        let displayTotalLine = document.getElementById('table__tfoot');
         displayTotalLine.innerHTML += `
+        <tr id="tfoot__tr">
         <th></th>
         <th></th>
         <th class="final__total">Total</th>
         <th class="final__price">${sum}€</th>
+        </tr>
         `;
     }
     displayTotal();
+
     //Sauvegarde du prix total dans le LocalStorage
     let localStorageFinalPrice = localStorage.setItem("finalPrice", sum);
 }
 
-//Création de la fonction pour supprimer les objets, soit par ligne, soit vider tout le panier
+//Création de la fonction pour supprimer les objets, soit par id, soit vider tout le panier
 function deleteObject() {
     const LOCAL_STORAGE_KEY = "object";
     let localStorageObject = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY));

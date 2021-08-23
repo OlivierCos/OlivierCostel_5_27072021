@@ -17,5 +17,5 @@ confirmationContainer.innerHTML +=
 displayConfirmation();
 
 //Suppression des données du localStorage lorsque la commande est validée
-// localStorage.clear();
+localStorage.clear();
 

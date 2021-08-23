@@ -1,4 +1,5 @@
-///Création d'une classe pour appeler l'API avec deux fonctions getObject(s) pour récupérer les objects json avec un fetch///
+///Création d'une classe pour appeler l'API avec deux fonctions getObject(s) pour récupérer les objects json 
+///via un fetch
 export class ObjectService {
     constructor(){}
     async getObject(id){

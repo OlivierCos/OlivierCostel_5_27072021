@@ -4,7 +4,8 @@ import {ObjectService} from "./services/objectService.js";
 ///Utilisation de la fonction init pour lancer le process
 init();
 
-///Fonction pour lancer : nouvelle promise de la classe ObjectService, constante pour appeler la fonction fetch et appel de celle qui fait le rendu html dynamique///
+///Fonction pour lancer : nouvelle promise de la classe ObjectService, constante pour appeler la fonction fetch et appel de celle qui fait le rendu
+/// html dynamique
 async function init() {
     const objectService = new ObjectService();
     ///Création d'une variable afin de récupérer l'id de l'object sélectionné dans la page index.html
