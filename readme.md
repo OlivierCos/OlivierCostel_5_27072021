@@ -4,7 +4,7 @@ Projet à réaliser dans le cadre de la formation Développeur Web d'Openclassro
 
 ### Technologies utilisées : ###
 
-HTML, CSS(SASS) et Javascript.
+HTML, CSS et Javascript.
 
 ### Prerequisites ###
 
