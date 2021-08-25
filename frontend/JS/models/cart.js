@@ -1,5 +1,5 @@
 export class cart {
-    constructor (objects){
-      this.objects=objects;
-    }
+  constructor(objects) {
+    this.objects = objects;
+  }
 }
