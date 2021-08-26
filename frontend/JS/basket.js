@@ -33,7 +33,7 @@ function displayCart(cart) {
             <tr id="${object.id}"><td><img class="table__img" src="${object.image}"></td>
                 <td><p class="table__name">${object.name}</p></td>
                 <td></td>
-                <td><p class="table__price" src>${object.price}</p></td>
+                <td><p class="table__price" src>${object.price}€</p></td>
                 <td><button type="button" id="deleteLineButton_${object.id}" class="deleteLineButton">Supprimer</button></td></tr>
             `;
     });
@@ -82,8 +82,8 @@ function deleteObject() {
   let deleteLineBtn = document.querySelectorAll("[id^='deleteLineButton_']");
 
   deleteLineBtn.forEach((deleteBtn) => {
-    deleteBtn.addEventListener("click", (event) => {
-      event.preventDefault();
+    deleteBtn.addEventListener("click", (e) => {
+      e.preventDefault();
 
       const objectId = deleteBtn.id.split("_")[1];
       const deleteLineObject = document.getElementById(objectId);
@@ -97,8 +97,8 @@ function deleteObject() {
   });
 
   const deleteTotalBtn = document.getElementById("empty__basket");
-  deleteTotalBtn.addEventListener("click", (event) => {
-    event.preventDefault();
+  deleteTotalBtn.addEventListener("click", (e) => {
+    e.preventDefault();
     localStorage.clear();
     window.location.href = "basket.html";
   });
