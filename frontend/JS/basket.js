@@ -22,7 +22,7 @@ formService.displayForm();
 function displayCart(cart) {
   const totalSum = calculateTotal();
 
-  if (!cart || cart.objects.length == 0) {
+  if (!cart || cart.objects == null) {
     const emptyBasket = `<span id="BasketIsEmpty"> Votre panier est vide</span>`;
     const emptyBasketLine = document.getElementById("table");
     emptyBasketLine.innerHTML = emptyBasket;
