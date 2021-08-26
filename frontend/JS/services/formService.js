@@ -24,15 +24,11 @@ export class FormService {
       };
 
       const regexAddress = (value) => {
-        return /^[0-9]{1,3}(([,. ]?){1}[-a-zA-Zàâäéèêëïîôöùûüç']+)*$/.test(
-          value
-        );
+        return /^[0-9]{1,4}[A-Za-z\s-]{7,40}$/.test(value);
       };
 
       const regexEmail = (value) => {
-        return /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
-          value
-        );
+        return /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(value);
       };
 
       //Validation des données du formulaire et ajout d'un message d'alerte pour montrer que le champ est valide ou non selon les RegEx
@@ -87,13 +83,7 @@ export class FormService {
         }
       }
       //Contrôle de la validité de chaque input du form avant envoi dans le localStorage
-      if (
-        firstNameCheck(formData) &&
-        lastNameCheck(formData) &&
-        addressCheck(formData) &&
-        cityCheck(formData) &&
-        emailCheck(formData)
-      ) {
+      if (firstNameCheck(formData) && lastNameCheck(formData) && addressCheck(formData) && cityCheck(formData) &&emailCheck(formData)) {
         //Mettre l'objet formData dans le localStorage
         localStorage.setItem("formData", JSON.stringify(formData));
       } else {
@@ -102,9 +92,7 @@ export class FormService {
       ///Création de la fonction pour envoyer des données au service web via l'API
       function sendOrder() {
         const LOCAL_STORAGE_KEY = "object";
-        let localStorageObject = JSON.parse(
-          localStorage.getItem(LOCAL_STORAGE_KEY)
-        );
+        let localStorageObject = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY));
         const DataToSend = {
           products: localStorageObject.map((object) => object.id),
           contact: formData,

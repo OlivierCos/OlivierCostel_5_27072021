@@ -178,7 +178,8 @@ footer .footer__contact {
 .button__container button,
 .manage__basket button,
 .table__body button,
-.order__button {
+.order__button,
+.manage__basket a {
   background-color: #fff;
   cursor: pointer;
   font-family: "Roboto Slab";
@@ -193,7 +194,8 @@ footer .footer__contact {
 .button__container button:hover,
 .manage__basket button:hover,
 .table__body button:hover,
-.order__button:hover {
+.order__button:hover,
+.manage__basket a:hover {
   transition: 500ms;
   transform: scale(1.2);
   opacity: 0.8;
@@ -315,10 +317,17 @@ thead th {
   .table__button {
     font-size: 0.6rem;
   }
+  .manage__basket{
+    display:flex;
+    flex-direction: column-reverse;
+    width: 50%;
+    margin: 0 auto;
+  }
 }
 
 @media screen and (max-width: 600px) {
-  .manage__basket button {
+  .manage__basket button,
+  .manage__basket a {
     padding: 0.4rem 0.5rem;
     margin: 0.5rem;
   }
