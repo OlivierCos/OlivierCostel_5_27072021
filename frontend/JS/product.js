@@ -55,6 +55,8 @@ function displayObject(object) {
       localStorage.setItem("object", JSON.stringify(localStorageObject));
     };
 
+    alert("Ce produit a bien été rajouté au panier");
+
     addLocalStorage();
   });
 }
