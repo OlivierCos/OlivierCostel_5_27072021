@@ -20,10 +20,9 @@ p {
   margin-block-end: 0;
 }
 
-/***HEADER***/
 header {
   background-color: #fff;
-  border-bottom: 0.2rem solid #4e496b;
+  border-bottom: 0.2rem solid #496b54;
 }
 .header__infos {
   margin: 0 auto;

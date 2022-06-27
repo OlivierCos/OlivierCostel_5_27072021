@@ -28,7 +28,8 @@ function displayObject(object) {
         <p class="article__price">${object.price}€ Total</p>
         <div class="button__container">
             <a href="index.html"><button class="index__button">Retour</button></a>
-            <a><button id="btnCart" class="addToCart__button">Ajouter au panier</button></a>
+            <a><button id="btnCart" class="addToCart__button">Ajouter au panier</button>
+            <div id="alertPanel" ></div></a>
         </div>
         </article>`;
 
@@ -54,7 +55,7 @@ function displayObject(object) {
       localStorageObject.push(objectStorage);
       localStorage.setItem("object", JSON.stringify(localStorageObject));
     };
-
+    
     alert("Ce produit a bien été rajouté au panier");
 
     addLocalStorage();
