@@ -73,10 +73,8 @@ Le serveur doit se trouver sur `localhost` avec le port par défaut `3000`. Si l
 
  &nbsp; 
 
-  &nbsp; 
 
 __1) Page d'accueil avant design final &nbsp;   &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;   &nbsp;   &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;   &nbsp;   2) Panier avant design final__
 
- &nbsp; 
 
 <img alt="Page d'accueil avant design" width=45% src="accueil.png"></img> <img alt="Page pour effectuer une commande avant design" width=45% src="panier.png"></img>
