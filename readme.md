@@ -68,7 +68,7 @@ Vous aurez besoin de Node et `npm` installé localement sur votre machine.
 ### Installation ###
 
 Clonez ce répo. Depuis le dossier du projet, tapez `npm install`. Vous pouvez démarrez le serveur avec la commande `node server`. 
-Le serveur soit être sur `localhost` avec le port par défaut `3000`. Si le serveur est sur un autre port pour une quelconque raison, cela sera indiqué sur la console lorsque le serveur démarre, e.g. `Listening on port 3001`.
+Le serveur doit se trouver sur `localhost` avec le port par défaut `3000`. Si le serveur est sur un autre port, cela sera indiqué sur la console lorsque le serveur démarre, ex. : `Listening on port 3001`.
 
 
 <p align="center" width="100%">
