@@ -70,8 +70,5 @@ Vous aurez besoin de Node et `npm` installé localement sur votre machine.
 Clonez ce répo. Depuis le dossier du projet, tapez `npm install`. Vous pouvez démarrez le serveur avec la commande `node server`. 
 Le serveur doit se trouver sur `localhost` avec le port par défaut `3000`. Si le serveur est sur un autre port, cela sera indiqué sur la console lorsque le serveur démarre, ex. : `Listening on port 3001`.
 
-
-<p align="center" width="100%">
-<img alt="Page d'accueil avant design" width=45% src="accueil.png"></img>
-<img alt="Page pour effectuer une commande avant design" width=45% src="panier.png"></img>
-</p>
+__1) Page d'accueil avant design final &nbsp;   &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;   &nbsp;   &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;   &nbsp;   2) Panier avant design final__
+<img alt="Page d'accueil avant design" width=45% src="accueil.png"></img> <img alt="Page pour effectuer une commande avant design" width=45% src="panier.png"></img>
