@@ -17,13 +17,13 @@ Création d'un site e-commerce proposant des meubles en chêne.
 
 Le site comporte : 
     
-    *   Une page __d’accueil__ montrant tous les articles disponibles à la vente.
+*   Une page __d’accueil__ montrant tous les articles disponibles à la vente.
 
-    *   Une page **Produit**, depuis cette page l’utilisateur peut sélectionner un vernis et ajouter le produit personnalisé à son panier.
+*   Une page **Produit**, depuis cette page l’utilisateur peut sélectionner un vernis et ajouter le produit personnalisé à son panier.
 
-    *   Une page **Panier**, avec un résumé des produits dans le panier et le prix total du panier. Et également Un formulaire avec des données vérifées par regex permettant de passer une commande. 
+*   Une page **Panier**, avec un résumé des produits dans le panier et le prix total du panier. Et également Un formulaire avec des données vérifées par regex permettant de passer une commande. 
 
-    * Une page **Confirmation** avec un message de confirmation de commande et indiquant l'identifiant de commande envoyé par l’API.
+* Une page **Confirmation** avec un message de confirmation de commande et indiquant l'identifiant de commande envoyé par l’API.
 
 
 
