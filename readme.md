@@ -1,5 +1,4 @@
 # Orinoco # Frontend development
-hola
 
 ### Création d'un site e-commerce proposant des meubles en chêne
  
