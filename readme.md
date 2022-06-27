@@ -17,7 +17,7 @@ Création d'un site e-commerce proposant des meubles en chêne.
 
 Le site comporte : 
     
-    *   Une page **d’accueil** montrant tous les articles disponibles à la vente.
+    *   Une page __d’accueil__ montrant tous les articles disponibles à la vente.
 
     *   Une page **Produit**, depuis cette page l’utilisateur peut sélectionner un vernis et ajouter le produit personnalisé à son panier.
 
