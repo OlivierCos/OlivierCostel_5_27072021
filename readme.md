@@ -1,6 +1,6 @@
 # Orinoco # Frontend development
 
-Création d'un site e-commerce proposant des meubles en chêne.
+Création d'un site e-commerce proposant des meubles en chêne
 
 🛠️ Effectuer des requêtes avec une API
 
@@ -61,7 +61,7 @@ Le site comporte 4 pages :
 
 HTML, CSS et Javascript.
 
-### Prérequis " ###
+### Prérequis ###
 
 Vous aurez besoin de Node et `npm` installé localement sur votre machine.
 
@@ -69,3 +69,9 @@ Vous aurez besoin de Node et `npm` installé localement sur votre machine.
 
 Clonez ce répo. Depuis le dossier du projet, tapez `npm install`. Vous pouvez démarrez le serveur avec la commande `node server`. 
 Le serveur soit être sur `localhost` avec le port par défaut `3000`. Si le serveur est sur un autre port pour une quelconque raison, cela sera indiqué sur la console lorsque le serveur démarre, e.g. `Listening on port 3001`.
+
+
+<p align="center" width="100%">
+<img alt="Page d'accueil avant design" width=max-width src="accueil.png"></img>
+<img alt="Page pour effectuer une commande avant design" width=max-width src="panier.png"></img>
+</p>

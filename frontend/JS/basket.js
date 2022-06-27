@@ -19,7 +19,9 @@ const formService = new FormService();
 formService.displayForm();
 
 
-document.getElementById('date').value = new Date().toISOString();
+document.getElementById('date').value = new Date().toISOString().substring(0, 10);
+document.getElementById('date').min = new Date().toISOString().substring(0, 10);
+
 
 
 //Création de la fonction pour afficher dynamiquement le panier en HTML
@@ -38,7 +40,7 @@ function displayCart(cart) {
                 <td><p class="table__name">${object.name}</p></td>
                 <td></td>
                 <td><p class="table__price" src>${object.price}€</p></td>
-                <td><button type="button" id="deleteLineButton_${object.id}" class="deleteLineButton">Supprimer</button></td></tr>
+                <td><button type="button" id="deleteLineButton_${object.id}" class="deleteLineButton">X</button></td></tr>
             `;
     });
     displayTotal(totalSum);

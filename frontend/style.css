@@ -182,12 +182,20 @@ footer .footer__contact {
   background-color: #fff;
   cursor: pointer;
   font-family: "Roboto Slab";
+  font-size: 1rem;
   font-weight: 800;
   border-radius: 15px;
   border: 2px solid black;
-  padding: 0.4rem 2rem;
+  padding: 0.4rem 1rem;
   color: #496b54;
   margin: 0 2rem;
+}
+.order__button{
+  font-size: 1.3rem;
+}
+
+.table__body button{
+  padding: 0.1rem 0.4rem;
 }
 
 .button__container button:hover,
@@ -220,6 +228,13 @@ footer .footer__contact {
 
 /***BASKET.HTML***/
 
+.panier__formulaire {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin :0 1rem 0 2rem;
+}
+
 .table {
   text-align: center;
   padding-bottom: 1rem;
@@ -229,6 +244,7 @@ footer .footer__contact {
 
 .table__body img {
   width: 5rem;
+  border-radius: 20px;
 }
 
 .order__summary h2 {
@@ -241,7 +257,6 @@ footer .footer__contact {
 }
 
 .form h2 {
-  padding-top: 2rem;
   padding-bottom: 1rem;
 }
 
@@ -279,6 +294,13 @@ thead th {
 
 .form__container {
   padding-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 950px) {
+.panier__formulaire {
+  flex-direction: column;
+  margin: 0;
+}
 }
 
 @media screen and (max-width: 800px) {

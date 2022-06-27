@@ -22,54 +22,60 @@
         <div class="order__summary">
             <h2>Récapitulatif de votre commande</h2>
         </div>
-        <table id="table" class="table">
-            <thead class="table__thead">
-                <tr>
-                    <th>Photo</th>
-                    <th>Produit</th>
-                    <th></th>
-                    <th>Prix</th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tbody id="tableb" class="table__body">
-            </tbody>
-            <tfoot id="table__tfoot" class="table__tfoot">
+        <div class="panier__formulaire">
+            <div> 
+                <table id="table" class="table">
+                    <thead class="table__thead">
+                        <tr>
+                            <th>Photo</th>
+                            <th>Produit</th>
+                            <th></th>
+                            <th>Prix</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableb" class="table__body">
+                    </tbody>
+                    <tfoot id="table__tfoot" class="table__tfoot">
 
-            </tfoot>
-        </table>
-        <div class="manage__basket"> 
-            <button id="empty__basket" class="empty__basket" type="button">Vider le panier</button>
-            <a href="index.html" class="keep__shopping">Continuer les achats</a>
+                    </tfoot>
+                </table>
+                <div class="manage__basket"> 
+                    <button id="empty__basket" class="empty__basket" type="button">Vider le panier</button>
+                    <a href="index.html" class="keep__shopping">Continuer les achats</a>
+                </div>
+            </div>    
+            <!--Formulaire-->
+            <div>
+                <form class="form">
+                    <h2>Vos coordonnées</h2>
+                    <div class="form__container">
+                        <label for="lastName" class ="form__label">Nom :</label>
+                        <input id="lastName" class="form__input" type="text" placeholder="Votre nom">
+                    </div>
+                    <div class="form__container">
+                        <label for="firstName" class="form__label">Prénom :</label>
+                        <input id="firstName" class="form__input" type="text" placeholder="Votre prénom">
+                    </div>
+                    <div class="form__container">
+                        <label for="email" class="form__label">@Email :</label>
+                        <input id="email" class="form__input" type="text" placeholder="Votre adresse e-mail">
+                    </div>
+                    <div class="form__container">
+                        <label for="address" class="form__label">Adresse :</label>
+                        <input id="address" class="form__input" type="text" placeholder="Votre adresse postale">
+                    </div>
+                    <div class="form__container">
+                        <label for="city" class="form__label">Ville :</label>
+                        <input id="city" class="form__input" type="text" placeholder="Votre ville">
+                    </div>
+                    <div class="form__container">
+                        <label for="date" class="form__label">Date de livraison souhaitée:</label>
+                        <input type="date" id="date" name="date" >
+                    </div>
+                </form>
+            </div>
         </div>
-        <!--Formulaire-->
-        <form class="form">
-            <h2>Vos coordonnées</h2>
-            <div class="form__container">
-                <label for="lastName" class ="form__label">Nom :</label>
-                <input id="lastName" class="form__input" type="text" placeholder="Votre nom">
-            </div>
-            <div class="form__container">
-                <label for="firstName" class="form__label">Prénom :</label>
-                <input id="firstName" class="form__input" type="text" placeholder="Votre prénom">
-            </div>
-            <div class="form__container">
-                <label for="email" class="form__label">@Email :</label>
-                <input id="email" class="form__input" type="text" placeholder="Votre adresse e-mail">
-            </div>
-            <div class="form__container">
-                <label for="address" class="form__label">Adresse :</label>
-                <input id="address" class="form__input" type="text" placeholder="Votre adresse postale">
-            </div>
-            <div class="form__container">
-                <label for="city" class="form__label">Ville :</label>
-                <input id="city" class="form__input" type="text" placeholder="Votre ville">
-            </div>
-            <div class="form__container">
-                <label for="date" class="form__label">Date de livraison souhaitée:</label>
-                <input type="date" id="date" name="date" value="2021-09-01" min="2021-09-01" max="2022-03-31">
-            </div>
-        </form>
         <button class="order__button" type="button">Confirmer votre commande</button>
     </main>
         <!--Footer-->
