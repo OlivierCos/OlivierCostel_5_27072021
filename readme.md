@@ -1,6 +1,8 @@
-# Orinoco #
+# Orinoco # Frontend development
 
 Création d'un site e-commerce proposant des meubles en chêne.
+
+🛠️ Effectuer des requêtes avec une API
 
 🛠️ Intégrer dynamiquement les éléments de l’API dans les différentes pages web avec JavaScript
 
@@ -8,16 +10,16 @@ Création d'un site e-commerce proposant des meubles en chêne.
 
 
 
-| Langages | et  | outils |
-| :---: | :---: | :---: |
-| HTML5 | Sass | NPM (Node Package Manager)|
-| CSS3 | --- | Git/GitHub |
-| Java-script | Node.js | Visual Studio Code |
+| Langages | Outils |
+| :---: | :---: |
+| HTML5 | Node.js/NPM (Node Package Manager)|
+| CSS3 | Git/GitHub |
+| Java-script | Visual Studio Code |
 
 
-Le site comporte : 
+Le site comporte 4 pages : 
     
-*   Une page __d’accueil__ montrant tous les articles disponibles à la vente.
+*   Une page d’__Accueil__ montrant tous les articles disponibles à la vente.
 
 *   Une page **Produit**, depuis cette page l’utilisateur peut sélectionner un vernis et ajouter le produit personnalisé à son panier.
 

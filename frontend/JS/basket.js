@@ -18,6 +18,10 @@ async function init() {
 const formService = new FormService();
 formService.displayForm();
 
+
+document.getElementById('date').value = new Date().toISOString();
+
+
 //Création de la fonction pour afficher dynamiquement le panier en HTML
 function displayCart(cart) {
   const totalSum = calculateTotal();
