@@ -8,32 +8,58 @@ Création d'un site e-commerce proposant des meubles en chêne.
 
 
 
-
-Le site comporte : 
-    -   Une page d’accueil montrant tous les articles disponibles à la vente.
-
-    -   Une page “produit”, depuis cette page l’utilisateur peut sélectionner un vernis et ajouter le produit personnalisé à son panier.
-
-    -   Une page “panier”, avec un résumé des produits dans le panier et le prix total du panier. Et également Un formulaire avec des données vérifées par regex permettant de passer une commande. 
-
-    - Une page “confirmation” avec un message de confirmation de commande et indiquant l'identifiant de commande envoyé par l’API.
-
-
-    <table>
-
 | Langages | et  | outils |
 | :---: | :---: | :---: |
-| HTML5 | Node.js | NPM (Node Package Manager)|
-| CSS3 | Git/GitHub | xXx |
-| Java-script | Sass | Visual Studio Code |
+| HTML5 | Sass | NPM (Node Package Manager)|
+| CSS3 | --- | Git/GitHub |
+| Java-script | Node.js | Visual Studio Code |
 
+
+Le site comporte : 
+    
+    *   Une page d’accueil montrant tous les articles disponibles à la vente.
+
+    *   Une page “produit”, depuis cette page l’utilisateur peut sélectionner un vernis et ajouter le produit personnalisé à son panier.
+
+    *   Une page “panier”, avec un résumé des produits dans le panier et le prix total du panier. Et également Un formulaire avec des données vérifées par regex permettant de passer une commande. 
+
+    * Une page “confirmation” avec un message de confirmation de commande et indiquant l'identifiant de commande envoyé par l’API.
+
+
+
+<!-- <table>
+<thead>
+<tr>
+<th align="center">Langages</th>
+<th align="center">et</th>
+<th align="center">outils</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">HTML5</td>
+<td align="center">Node.js</td>
+<td align="center">NPM (Node Package Manager)</td>
+</tr>
+<tr>
+<td align="center">CSS3</td>
+<td align="center">Git/GitHub</td>
+<td align="center">xXx</td>
+</tr>
+<tr>
+<td align="center">Java-script</td>
+<td align="center">Sass</td>
+<td align="center">Visual Studio Code</td>
+</tr>
+</tbody>
+</table> -->
 
 
 ### Technologies utilisées : ###
 
 HTML, CSS et Javascript.
 
-### Prerequisites ###
+### Prérequis " ###
 
 Vous aurez besoin de Node et `npm` installé localement sur votre machine.
 
