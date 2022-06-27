@@ -72,6 +72,6 @@ Le serveur doit se trouver sur `localhost` avec le port par défaut `3000`. Si l
 
 
 <p align="center" width="100%">
-<img alt="Page d'accueil avant design" width=max-width src="accueil.png"></img>
-<img alt="Page pour effectuer une commande avant design" width=max-width src="panier.png"></img>
+<img alt="Page d'accueil avant design" width=45% src="accueil.png"></img>
+<img alt="Page pour effectuer une commande avant design" width=45% src="panier.png"></img>
 </p>
