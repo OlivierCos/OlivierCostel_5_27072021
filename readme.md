@@ -1,6 +1,8 @@
 # Orinoco # Frontend development
 
-Création d'un site e-commerce proposant des meubles en chêne
+### Création d'un site e-commerce proposant des meubles en chêne
+ 
+ &nbsp; 
 
 🛠️ Effectuer des requêtes avec une API
 
@@ -8,7 +10,7 @@ Création d'un site e-commerce proposant des meubles en chêne
 
 🛠️ Planification de tests
 
-
+ &nbsp; 
 
 | Langages | Outils |
 | :---: | :---: |
@@ -16,6 +18,7 @@ Création d'un site e-commerce proposant des meubles en chêne
 | CSS3 | Git/GitHub |
 | Java-script | Visual Studio Code |
 
+ &nbsp; 
 
 Le site comporte 4 pages : 
     
@@ -27,35 +30,7 @@ Le site comporte 4 pages :
 
 * Une page **Confirmation** avec un message de confirmation de commande et indiquant l'identifiant de commande envoyé par l’API.
 
-
-
-<!-- <table>
-<thead>
-<tr>
-<th align="center">Langages</th>
-<th align="center">et</th>
-<th align="center">outils</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center">HTML5</td>
-<td align="center">Node.js</td>
-<td align="center">NPM (Node Package Manager)</td>
-</tr>
-<tr>
-<td align="center">CSS3</td>
-<td align="center">Git/GitHub</td>
-<td align="center">xXx</td>
-</tr>
-<tr>
-<td align="center">Java-script</td>
-<td align="center">Sass</td>
-<td align="center">Visual Studio Code</td>
-</tr>
-</tbody>
-</table> -->
-
+ &nbsp; 
 
 ### Technologies utilisées : ###
 
